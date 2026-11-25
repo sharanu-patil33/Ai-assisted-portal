@@ -1,0 +1,18 @@
+{
+  "name": "ai-learning-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Layer 2-5 Node.js CommonJS + Express Backend for AI-Assisted Personalized Learning System",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
+

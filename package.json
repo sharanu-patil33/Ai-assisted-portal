@@ -1,0 +1,12 @@
+{
+  "name": "ai-personalized-learning",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-Assisted Personalized Learning System (5-Layer Modular Architecture)",
+  "scripts": {
+    "dev": "node -e \"const {spawn}=require('child_process');const npm=process.platform==='win32'?'npm.cmd':'npm';const s=spawn(npm,['run','dev','--prefix','server'],{stdio:'inherit',shell:true});const c=spawn(npm,['run','dev','--prefix','client'],{stdio:'inherit',shell:true});process.on('SIGINT',()=>{s.kill();c.kill();process.exit();});\"",
+    "test": "npm --prefix server test",
+    "build": "npm --prefix client run build"
+  }
+}
+
